@@ -1,0 +1,33 @@
+id: 583b2e34-79ec-4d3e-b1de-4c5cb9f9a07e
+timestamp: 2024-03-10T11:18:23.027Z
+source: TAP-GUI
+username: guest
+options:
+  projectName: eat-me-website
+  artifactId: yummy
+  groupId: com.eat.me
+  packageName: com.eat.me.yummy
+  buildTool: maven
+  exposeOpenAPIEndpoint: true
+  databaseType: postgres
+  databaseMigrationTool: flyway
+  databaseIntegrationTestType: testcontainers
+  includeBuildToolWrapper: true
+  apiSystem: profile-management
+  apiOwner: customer-relations-department
+  apiDescription: Manage customer profiles
+  databaseName: customer-database
+  liveUpdateIDESupport: true
+accelerator:
+  name: java-rest-service
+fragments:
+  - name: build-wrapper-gradle
+  - name: build-wrapper-maven
+  - name: live-update
+  - name: spring-boot-database
+  - name: spring-boot-h2
+  - name: spring-boot-mysql
+  - name: spring-boot-postgresql
+  - name: tap-workload
+  - name: testcontainers-mysql
+  - name: testcontainers-postgresql
